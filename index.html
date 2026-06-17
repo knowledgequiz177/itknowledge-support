@@ -1,80 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>IT Knowledge Support</title>
-
-<style>
-body{
-font-family: Arial, sans-serif;
-max-width: 900px;
-margin: auto;
-padding: 20px;
-line-height: 1.7;
-background:#f8fafc;
-color:#333;
-}
-
-h1{
-color:#1e88e5;
-}
-
-.section{
-background:white;
-padding:20px;
-margin-top:20px;
-border-radius:10px;
-box-shadow:0 2px 10px rgba(0,0,0,.08);
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IT Knowledge Support</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
 </head>
-
 <body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="index.html"><span class="bolt">⚡</span> IT Knowledge Support</a>
+      <button class="menu-btn" aria-label="Open menu">☰</button>
+      <div class="nav-links">
+        <a class="active" href="index.html">Home</a>
+        <a href="faq.html">FAQ</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="contact.html">Contact</a>
+        <a class="ticket" href="contact.html">Submit a Ticket</a>
+      </div>
+    </nav>
+  </header>
 
-<h1>IT Knowledge Support</h1>
+  <main>
+    <section class="hero container">
+      <div class="hero-text">
+        <h1>Find answers fast.<br><span>Get help instantly.</span></h1>
+        <p>Your all-in-one resource for IT Knowledge support, account help, purchases, privacy, and getting started guides.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="faq.html">Browse Topics</a>
+          <a class="btn secondary" href="contact.html">Contact Us</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="screen-top"><span></span><span></span><span></span></div>
+        <div class="support-illustration">💻</div>
+        <h3>IT Knowledge Help Center</h3>
+        <p>Support for quizzes, credits, accounts, and app issues.</p>
+      </div>
+    </section>
 
-<div class="section">
-<h2>Contact Information</h2>
-<p><strong>Email:</strong> knowledgequiz177@gmail.com</p>
-</div>
+    <section class="search-section container">
+      <div class="search-box">
+        <span>🔍</span>
+        <input id="homeSearch" type="text" placeholder="Search for answers... (Press '/' to focus)" />
+      </div>
+      <div id="searchResults" class="search-results"></div>
+    </section>
 
-<div class="section">
-<h2>About IT Knowledge</h2>
-<p>
-IT Knowledge is an educational quiz application designed to help users improve their information technology knowledge through interactive quizzes and learning activities.
-</p>
-</div>
+    <section class="features container">
+      <article>
+        <div class="icon">🚀</div>
+        <h3>Getting Started</h3>
+        <p>Learn how to create an account and start using quizzes.</p>
+      </article>
+      <article>
+        <div class="icon">🎟️</div>
+        <h3>Credits & Purchases</h3>
+        <p>Get help with credit packs and in-app purchase questions.</p>
+      </article>
+      <article>
+        <div class="icon">🔐</div>
+        <h3>Account Support</h3>
+        <p>Forgot password, login issues, or account deletion support.</p>
+      </article>
+    </section>
 
-<div class="section">
-<h2>Frequently Asked Questions</h2>
+    <section class="status container">
+      <div class="section-title">
+        <h2>System Status</h2>
+        <p>Current information about IT Knowledge services.</p>
+      </div>
+      <div class="status-banner">✓ All systems operational</div>
+      <div class="status-grid">
+        <div><h3>App</h3><p>iOS and Android application</p><strong>Operational</strong></div>
+        <div><h3>Accounts</h3><p>Sign in and password reset</p><strong>Operational</strong></div>
+        <div><h3>Purchases</h3><p>Credits and in-app purchases</p><strong>Operational</strong></div>
+        <div><h3>Support</h3><p>Email support requests</p><strong>Operational</strong></div>
+      </div>
+    </section>
+  </main>
 
-<h3>How do I create an account?</h3>
-<p>You can create an account directly from the application using your email address.</p>
-
-<h3>I forgot my password. What should I do?</h3>
-<p>Use the "Forgot Password" option on the login screen.</p>
-
-<h3>How do I purchase credits?</h3>
-<p>Credits can be purchased directly within the application.</p>
-
-<h3>How can I report a problem?</h3>
-<p>Email us at knowledgequiz177@gmail.com.</p>
-</div>
-
-<div class="section">
-<h2>Privacy Policy</h2>
-<p>
-We respect your privacy. User information is used only to provide and improve the application experience.
-</p>
-</div>
-
-<div class="section">
-<h2>Terms of Use</h2>
-<p>
-By using IT Knowledge, you agree to use the application responsibly and in accordance with applicable laws.
-</p>
-</div>
-
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><h3>⚡ IT Knowledge Support</h3><p>Helping users learn and practice IT concepts with confidence.</p></div>
+      <div><h4>Company</h4><a href="privacy.html">Privacy Policy</a><a href="delete-account.html">Delete Account</a><a href="terms.html">Terms of Use</a></div>
+      <div><h4>Support</h4><a href="faq.html">FAQ</a><a href="contact.html">Contact</a></div>
+      <div><h4>Connect</h4><a href="mailto:knowledgequiz177@gmail.com">knowledgequiz177@gmail.com</a></div>
+    </div>
+    <p class="copyright">© 2026 IT Knowledge. All rights reserved.</p>
+  </footer>
 </body>
 </html>
